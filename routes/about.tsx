@@ -1,12 +1,9 @@
 import { Head } from "$fresh/runtime.ts";
 import { getAge } from "../data/age.ts";
-import { Telemetry } from "../islands/Telemetry.tsx";
 
 export default function Home() {
 	return (
 		<>
-			<Telemetry />
-
 			<Head>
 				<title>Glowman554 - About me</title>
 			</Head>

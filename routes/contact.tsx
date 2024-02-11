@@ -1,12 +1,9 @@
 import { Head } from "$fresh/runtime.ts";
 import { MessageField } from "../islands/MessageField.tsx";
-import { Telemetry } from "../islands/Telemetry.tsx";
 
 export default function Home() {
 	return (
 		<>
-			<Telemetry />
-
 			<Head>
 				<title>Glowman554 - Contact</title>
 			</Head>

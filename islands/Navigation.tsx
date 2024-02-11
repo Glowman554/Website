@@ -11,7 +11,6 @@ export function Navigation() {
 			<a href="/projects">Projects</a>
 			<a href="/contact">Contact me</a>
 			<a href="/downloads">Downloads</a>
-			<a href="/stats">Stats</a>
 			<a href="https://github.com/Glowman554">GitHub</a>
 			
 			<a href="javascript:void(0);" onClick={() => {
