@@ -11,6 +11,9 @@ async function getKv() {
 }
 
 export async function onTelemetry(packet: TelemetryPacket) {
+    if (Deno.env.get("NO_TELEMETRY") == "true") {
+        return;
+    }
     const key: Deno.KvKey = [ "users", packet.id, new URL(packet.href).pathname ];
 
     const kv = await getKv();

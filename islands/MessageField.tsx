@@ -6,8 +6,8 @@ export function MessageField() {
 	return (
         <div>
             <h2>Send me a message</h2>
-            <textarea class={"glow-textarea"} value={textareaValue.value} rows={5} onChange={(e) => textareaValue.value = (e?.target as any | null)?.value || "" }></textarea>
-            <button onClick={() => {
+            <textarea style={"background-color: grey;"} class={"glow-textarea"} value={textareaValue.value} rows={5} onChange={(e) => textareaValue.value = (e?.target as any | null)?.value || "" }></textarea>
+            <button class={"glow-button"} style={"display: block; margin: auto;"} onClick={() => {
                 fetch("/api/message", {
                     method: "POST",
                     body: textareaValue.value

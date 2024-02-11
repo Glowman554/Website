@@ -11,9 +11,9 @@ async function sendWebHook(message: string) {
 		throw new Error("Missing MESSAGE_WEBHOOK");
 	}
 
-	const client = new Webhook(webhookUrl, "Suggestions");
+	const client = new Webhook(webhookUrl, "Website");
 	const embed = new Embed({
-		title: "Suggestion",
+		title: "Message",
 		description: message
 	});
 	await client.send("", [ embed ]);
