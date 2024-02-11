@@ -42,6 +42,10 @@ export const handler: Handlers = {
         for await (const entry of kv.list<number>({ prefix: [ "users" ]})) {
             const href = entry.key[2] as string;
             const id = entry.key[1] as string;
+
+            if (Deno.env.get("RESET_TELEMETRY") == "true") {
+                await kv.delete(entry.key);
+            }
     
             if (!pages[href]) {
                 pages[href] = {

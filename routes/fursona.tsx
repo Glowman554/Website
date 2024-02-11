@@ -1,9 +1,12 @@
 import { Head } from "$fresh/runtime.ts";
+import { Telemetry } from "../islands/Telemetry.tsx";
 
 export default function Home() {
 	return (
 		<>
-			<Head>
+			<Telemetry />
+		
+        	<Head>
 				<title>Glowman554 - Fursona</title>
 			</Head>
 			<div class={"glow-text"}>

@@ -2,8 +2,6 @@ import { PageProps } from "$fresh/server.ts";
 import { Footer } from "../components/Footer.tsx";
 import { Header } from "../components/Header.tsx";
 import { Navigation } from "../islands/Navigation.tsx";
-import { Telemetry } from "../islands/Telemetry.tsx";
-
 
 export default function App({ Component }: PageProps) {
 	return (
@@ -14,7 +12,6 @@ export default function App({ Component }: PageProps) {
 
 				<link rel="stylesheet" href="/styles.css" />
 				<link rel="stylesheet" href="/fonts/jetbrains_mono/font.css" />
-				<Telemetry />
 			</head>
 			<body>
 				<div class="glow-content">

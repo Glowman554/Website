@@ -1,9 +1,12 @@
 import { Head } from "$fresh/runtime.ts";
 import { blogIndex } from "../data/blogIndex.ts";
+import { Telemetry } from "../islands/Telemetry.tsx";
 
 export default function Home() {
 	return (
 		<>
+			<Telemetry />
+			
 			<Head>
 				<title>Glowman554 - Blog</title>
 			</Head>
