@@ -34,5 +34,13 @@ export const downloads: DownloadData[] = [
         name: "Password manager",
         file: "/downloads/password.zip",
         link: "/blog/04_14_2023_password_manager.md"
+    },
+    {
+        name: "Phoenix specifications",
+        file: "/downloads/phoenix.pdf"
+    },
+    {
+        name: "Phoenix ip core",
+        file: "/downloads/phoenix_ip.zip"
     }
 ];
