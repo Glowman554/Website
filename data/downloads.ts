@@ -42,5 +42,9 @@ export const downloads: DownloadData[] = [
     {
         name: "Phoenix ip core",
         file: "/downloads/phoenix_ip.zip"
+    },
+    {
+        name: "Framework (1.20.4)",
+        file: "/downloads/Framework-1.20.4.jar"
     }
 ];
