@@ -40,8 +40,8 @@ export const downloads: DownloadData[] = [
         file: "/downloads/phoenix.pdf"
     },
     {
-        name: "Phoenix ip core",
-        file: "/downloads/phoenix_ip.zip"
+        name: "Inferno ip core",
+        file: "/downloads/inferno.zip"
     },
     {
         name: "Framework (1.20.4)",
