@@ -44,6 +44,10 @@ export const downloads: DownloadData[] = [
         file: "/downloads/inferno.zip"
     },
     {
+        name: "Simple RiscV processor",
+        file: "/downloads/riscv.zip"
+    },
+    {
         name: "Framework (1.20.4)",
         file: "/downloads/Framework-1.20.4.jar"
     }
