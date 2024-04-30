@@ -50,5 +50,13 @@ export const downloads: DownloadData[] = [
     {
         name: "Framework (1.20.4)",
         file: "/downloads/Framework-1.20.4.jar"
+    },
+    {
+        name: "Framework (1.20.5)",
+        file: "/downloads/Framework-1.20.5.jar"
+    },
+    {
+        name: "Framework (1.20.6)",
+        file: "/downloads/Framework-1.20.6.jar"
     }
 ];
