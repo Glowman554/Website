@@ -2,35 +2,38 @@
 
 ## History
 
-Before we did rewrite the kernel, we had a script to automatically create a documentation for FoxOS, it has A LOT of issues though. The main issue was that the documentation was inlined in the code, witch made it hard to edit.  
-  
-It looked like this:
-
-![old foxos documentation](/blog/foxos_old_docs.png)
+Before we did rewrite the kernel, we had a script to automatically create a
+documentation for FoxOS, it has A LOT of issues though. The main issue was that
+the documentation was inlined in the code, witch made it hard to edit.
 
 ## How it is now
 
-The new documentation is in the `docs.txt` file witch can be found in the root of the [horizon](https://github.com/TheUltimateFoxOS/horizon) repository. The documentation is in the following format:
+The new documentation is in the `docs.txt` file witch can be found in the root
+of the [horizon](https://github.com/TheUltimateFoxOS/horizon) repository. The
+documentation is in the following format:
 
-```txt
+```
 #<encoded_filename>:<function>: <description>
 ```
 
 It also supports to exclude files from the documentation using this format:
 
-```txt
+```
 #exclude:<encoded_filename>
 ```
 
-Assembly files are a little bit special, they need a special header in the assembly file so that the script knows a valid c signature for the assembly function. The header format is:
+Assembly files are a little bit special, they need a special header in the
+assembly file so that the script knows a valid c signature for the assembly
+function. The header format is:
 
-```txt
+```
 ;#<label_name>-signature: <c_signature>
 ```
 
-if a assembly label isn't a function, you can use the following format to ignore it:
+if a assembly label isn't a function, you can use the following format to ignore
+it:
 
-```txt
+```
 ;#<label_name>-discard
 ```
 
@@ -49,12 +52,15 @@ There where quite a few challenges. Heres a list of some of them:
 
 ## Conclusion
 
-We should have created a documentation for FoxOS way earlier than we did. It is a lot of work to document the now over 750 functions in the kernel. We still have a lot of work to do, but the build process works much better now.  
-  
-I am very happy with the result. Here is a screenshot of the documentation index:
+We should have created a documentation for FoxOS way earlier than we did. It is
+a lot of work to document the now over 750 functions in the kernel. We still
+have a lot of work to do, but the build process works much better now.
+
+I am very happy with the result. Here is a screenshot of the documentation
+index:
 
 ![new foxos documentation index](/blog/foxos_new_docs_index.png)
-  
+
 And here is a screenshot of the documentation itself:
 
 ![new foxos documentation](/blog/foxos_new_docs.png)
